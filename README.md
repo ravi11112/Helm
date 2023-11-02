@@ -17,6 +17,7 @@ Helm Registory (store the packages ,databases )
 
 Helm Release (for deployment,create new version ,)
 
+
 ####################
 
 **#Instalation of Helm in K8s Cluster** 
@@ -39,7 +40,8 @@ Helm Release (for deployment,create new version ,)
 
  ********************************************
 
-**Important Commands **
+
+**Important Commands**
 
 1. helm create <chart name >  //create a new charts include packages
 
@@ -61,23 +63,29 @@ Helm Release (for deployment,create new version ,)
 └── values.yaml
 ```
 
+
 2. helm install
 
  helm install <FIRST_ARGUMENT_RELEASE_NAME> <SECOND_ARGUMENT_CHART_NAME> // Using Charts install the package
 
  helm install myhelloworld1 helloworld
+
  
 
 3. helm list -a        // show list of all release
 
 
+
 4. helm upgrate myhelloworld1 helloworld   //do some change and upgrade the charts ,create new revision
+
   
 
 5. helm rollback  myhelloworld1 helloworld   //back to previous charts ,create a new version
    
 
+
 6. helm delete myhelloworld1 helloworld  
+
 
 
 
@@ -88,9 +96,12 @@ Helm Release (for deployment,create new version ,)
 
 Create a docker image for Python application with REST API and push to the dockerhub
 
+
 Create Helm Charts for your Python REST API app
 
+
 Helm chart installation and post-installation verification
+
 
 
 
@@ -109,7 +120,10 @@ Helm chart installation and post-installation verification
 5.docker push 
 ```docker push techraviraj/python_flask_project:python_flask1 ```
 
+
+
 then update the deployment,service,and values file in charts 
+
 for this python application
 
 
